@@ -5,11 +5,13 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthorModule } from './author/author.module';
 import { BookModule } from './book/book.module';
+import { PublisherModule } from './publisher/publisher.module';
 
 @Module({
   imports: [
     AuthorModule,
     BookModule,
+    PublisherModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
